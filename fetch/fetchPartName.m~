@@ -1,9 +1,0 @@
-function partName = fetchPartName(partId)
-
-partsFile = importdata('../parts/parts.txt');
-
-a = partsFile{partId};
-f = strfind(a,' ');
-partName = a((f+1):end);
-
-end
