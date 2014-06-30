@@ -8,6 +8,7 @@ function idx_vector = fetchClass(classID , train_test)
 if(classID > 200)
     disp('There is not such a classID!');
 end
+
 trainTestSplit = textread('../CUB_200_2011/CUB_200_2011/train_test_split.txt');
 imageClassLabels = textread('../CUB_200_2011/CUB_200_2011/image_class_labels.txt');
 
