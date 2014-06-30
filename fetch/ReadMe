@@ -1,0 +1,13 @@
+--fetchBoundBox   ---> gives the position of the bounding box for the given image (it gives the matrix <x> <y> <width> <height> of the 
+bounding box)
+--fetchClass      ---> gives the id of images related to one class for the train or test (gives the column vector)
+--fetchImgClass   ---> gives the classId of the given image
+--fetchImgPath    ---> gives the directory of the given image id
+--fetchImgValue   ---> gives the value of the image given the image id
+--fetchImg        ---> shows the image given the image id
+--fetchImgPart    ---> gives the positions of the parts with their partId for the given image id <partId> <x> <y>
+--fetchImgSPart   ---> gives the position of the Selected part for the given image id and the part number
+--fetchImgPartVis ---> gives that the selected part of the image is visible or not (1 if it is visible 0 otherwise.)
+--fetchPartName   ---> gives the name of the part given a part number
+--fetchClassName  ---> gives the name of the class for the given class id
+ 
