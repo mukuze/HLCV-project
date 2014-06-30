@@ -10,7 +10,7 @@ for i=1:size(imageDir,1)
     if (a(1) == imageId)
        s = imageDir{a(1)};
        f = strfind(s,' ');
-       path=strcat('../images/',s((f+1):end));
+       path=strcat('../CUB_200_2011/CUB_200_2011/images/',s((f+1):end));
        pathOfImage = path;
        break;
     end
