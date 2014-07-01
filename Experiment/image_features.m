@@ -2,7 +2,7 @@ function features = image_features( img_id ,bins_each_bodypart,tuned_percentage 
 %image_features extracts rg_features for given image
 %   Extracts rg_features for an image with img_id and gives back the feature vector. features output is
 %   (num_of_bodypats)*(bins_each_bodypart) column vector.
-num_of_bodyparts = 2;
+num_of_bodyparts = 5;
 addpath('../fetch');
 addpath('../featureExtractor');
 features = [];
