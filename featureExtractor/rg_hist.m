@@ -18,8 +18,13 @@ function h=rg_hist(img_color, num_bins)
 
       %  R=floor(img_color(i,j,1)/sumRGB(i,j)*num_bins)+1;
       %  G=floor(img_color(i,j,2)/sumRGB(i,j)*num_bins)+1;
-      R=floor(img_color(i,j,1)/sumRGB(i,j)*(num_bins-1))+1;
-      G=floor(img_color(i,j,2)/sumRGB(i,j)*(num_bins-1))+1;
+      if sumRGB(i,j)==0
+          R=1;
+          G=1;
+      else
+          R=floor(img_color(i,j,1)/sumRGB(i,j)*(num_bins-1))+1;
+          G=floor(img_color(i,j,2)/sumRGB(i,j)*(num_bins-1))+1;
+      end
 
       %B=img_color(i,j,3);
 
