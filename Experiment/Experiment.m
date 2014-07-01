@@ -1,4 +1,10 @@
 arr=randi(10000,10,1);
 for i=1:size(arr,1)
-[I,patch,v]=ImagePartPercentage(i,13,0.05,0.05);
+[I,patch,v]=ImagePartPercentage(arr(i),2,0.15,0.07);
+
+figure
+subplot(1,2,1);
+imshow(I);
+subplot(1,2,2);
+imshow(patch);
 end

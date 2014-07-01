@@ -6,14 +6,9 @@ addpath('../fetch');
 I=fetchImgValue(img_id);
 pos=fetchImgSPart(img_id,part_id);
 
-v=[pos(1),pos(2),width,height];
-
-patch=imcrop(I,[v(1)+(v(3)/2)-20-1,v(2)+(v(4)/2)-20-1,80,80]);
-
-figure
-subplot(1,2,1);
-imshow(I);
-subplot(1,2,2);
-imshow(patch);
+xmin = pos(1) - floor(width/2);
+ymin = pos(2) - floor(height/2);
+v = [xmin,ymin,width,height];
+patch = imcrop(I,v);
 end
 
